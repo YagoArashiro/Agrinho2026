@@ -1,1 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grão & Aroma — Café de Origem</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+  <!-- ===== CABEÇALHO ===== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#topo" class="logo">Grão<span>&</span>Aroma</a>
+
+      <nav class="nav" id="nav">
+        <a href="#sobre">Sobre</a>
+        <a href="#cardapio">Cardápio</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="topo">
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <p class="eyebrow">Torra artesanal · Lote pequeno</p>
+        <h1>Café de origem,<br>torrado com <em>cuidado</em>.</h1>
+        <p class="hero__lead">
+          Selecionamos grãos de pequenos produtores e torramos em
+          lotes pequenos para revelar o sabor real de cada colheita.
+        </p>
+        <div class="hero__actions">
+          <a href="#cardapio" class="btn btn--primary">Ver cardápio</a>
+          <a href="#sobre" class="btn btn--ghost">Nossa história</a>
+        </div>
+      </div>
+
+      <!-- Ilustração da xícara com vapor (elemento assinatura) -->
+      <div class="hero__art" aria-hidden="true">
+        <div class="cup">
+          <div class="cup__steam s1"></div>
+          <div class="cup__steam s2"></div>
+          <div class="cup__steam s3"></div>
+          <div class="cup__body"></div>
+          <div class="cup__handle"></div>
+          <div class="cup__plate"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOBRE ===== -->
+  <section class="about" id="sobre">
+    <div class="container about__inner">
+      <div class="about__media" aria-hidden="true">
+        <div class="bean-card">
+          <div class="bean"></div>
+        </div>
+      </div>
+
+      <div class="about__content">
+        <p class="eyebrow">Sobre nós</p>
+        <h2>Da fazenda até a sua xícara</h2>
+        <p>
+          Trabalhamos direto com produtores que cuidam da terra,
+          colhem no ponto certo e secam o café com paciência.
+          Aqui na cafeteria, torramos toda semana para garantir
+          que o sabor chegue fresco até você.
+        </p>
+
+        <ul class="specs">
+          <li>
+            <strong>1.200m</strong>
+            <span>Altitude média dos cafezais</span>
+          </li>
+          <li>
+            <strong>Torra média</strong>
+            <span>Equilíbrio entre acidez e corpo</span>
+          </li>
+          <li>
+            <strong>Caramelo &amp; frutas vermelhas</strong>
+            <span>Notas sensoriais do nosso blend</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CARDÁPIO ===== -->
+  <section class="menu" id="cardapio">
+    <div class="container">
+      <p class="eyebrow eyebrow--center">Cardápio</p>
+      <h2 class="menu__title">Escolhas da casa</h2>
+
+      <div class="menu__grid">
+
+        <article class="menu-card">
+          <h3>Espresso</h3>
+          <p>Extração curta e intensa, direto do nosso blend da casa.</p>
+          <span class="price">R$ 6,00</span>
+        </article>
+
+        <article class="menu-card">
+          <h3>Cappuccino</h3>
+          <p>Espresso, leite cremoso e uma pitada de canela.</p>
+          <span class="price">R$ 9,50</span>
+        </article>
+
+        <article class="menu-card">
+          <h3>Café com Leite</h3>
+          <p>Equilíbrio clássico, suave e encorpado.</p>
+          <span class="price">R$ 8,00</span>
+        </article>
+
+        <article class="menu-card">
+          <h3>Cold Brew</h3>
+          <p>Extração lenta a frio, ideal para dias quentes.</p>
+          <span class="price">R$ 11,00</span>
+        </article>
+
+        <article class="menu-card">
+          <h3>Filtrado V60</h3>
+          <p>Café de origem único, feito na hora em xícara individual.</p>
+          <span class="price">R$ 13,00</span>
+        </article>
+
+        <article class="menu-card">
+          <h3>Pão de Queijo</h3>
+          <p>Quentinho, feito todos os dias na nossa cozinha.</p>
+          <span class="price">R$ 7,00</span>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTATO / RODAPÉ ===== -->
+  <footer class="footer" id="contato">
+    <div class="container footer__inner">
+      <div class="footer__col">
+        <a href="#topo" class="logo logo--light">Grão<span>&</span>Aroma</a>
+        <p>Café de origem, torrado com cuidado, todos os dias.</p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Visite-nos</h4>
+        <p>Rua das Flores, 123 — São Paulo, SP</p>
+        <p>Seg a Sáb: 8h às 18h</p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Receba novidades</h4>
+        <form id="newsletterForm" class="newsletter">
+          <input type="email" id="newsletterEmail" placeholder="Seu e-mail" required>
+          <button type="submit" class="btn btn--primary">Assinar</button>
+        </form>
+        <p class="newsletter__msg" id="newsletterMsg"></p>
+      </div>
+    </div>
+
+    <p class="footer__bottom">© 2026 Grão & Aroma. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Botão "voltar ao topo" -->
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
